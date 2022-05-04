@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA8</title>
+    <link rel="stylesheet" type="text/css" href="ICA8.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="ICA8.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ICA08-JS SlideShow</h1>
+    </header>
+    <section id="sec">
+        <div id="image">
+            <img alt="image" id="main_image">
+        </div>
+        <div id="btns">
+            <div id="d_previous_btn">
+                <input type="button" id="previous_btn">
+            </div>
+            <div id="image_desc">
+                <label for="" id="lbl_image_desc"></label>
+            </div>
+            <div id="d_next_btn">
+                <input type="button" id="next_btn">
+            </div>
+            <div id="d_puase_play_btn">
+                <input type="button" id="puase_play_btn">
+            </div>
+            <div>
+                <label for="select">Transition: </label>
+                <select name="inOut" id="F_inandOut" >                        
+                    <option value="In" id="fadeIn">NoAffect</option>
+                    <option value="Out" id="fadeOut">FadeIN/Out</option>     
+            </select>
+            </div>
+            <div id="radioValue">
+                <label><input type="radio" name="radios" id="radio1" value="300">300ms</label>
+                <label><input type="radio" name="radios" id="radio2" value="900">900ms</label>
+                <label><input type="radio" name="radios" id="radio3" value="2000">2000ms</label>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="Footer"></div>
+    </footer>
+</body>
+
+</html>

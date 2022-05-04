@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Part A</title>
+    <script src="exam2CMPE2000.js"></script>
+</head>
+<body>
+    <form name="ElMar" method="post" action="https://thor.net.nait.ca/~demo/cmpe2000/ica04_formtest.php">
+        <div>Student Name : </div>
+        <div><input type="text" name="Nombre" placeholder="Student Name"></div>
+        <div>Grade Range : </div>
+        <div><input type="range" name="Posse" Min="0" Max="150" value="0"></div>
+        <div>Student Grade : </div>
+        <div><input type="text" name="Sally" maxlength="6" value="0"></div>
+        <div>Grade Option: </div>
+        <div>
+            <select name="Grado">
+                <option value="80">Honors</option>
+                <option value="50">Pass</option>
+                <option value="0" selected=selected>Fail</option>
+            </select>
+        </div>
+    
+        <!-- ID and label for binding left off so no IDs would be available ** on purpose -->
+        <label>Web : <input type="checkbox" name="Spider" value="2000" checked="checked"></label>
+        <label>OOP : <input type="checkbox" name="DotNET" value="2300"></label>
+        <label>Database : <input type="checkbox" name="KIADB" value="2400" checked="checked"></div>
+    
+        <div>Soda Pop : </div>
+        <div>
+            <label><input type="radio" name="Cola" value="4">Sprite</label>
+            <label><input type="radio" name="Cola" value="3">Dr Pepper</label>
+            <label><input type="radio" name="Cola" value="2" checked=checked>Barqs</label>
+            <label><input type="radio" name="Cola" value="1">Pepsi</label>
+        </div>
+        <input type="reset">
+        <input type='submit' value="If valid, off to server">
+        <input type="hidden" name="noSe" value="mt.rushmore">
+    </form>
+    
+</body>
+</html>

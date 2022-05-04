@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+/* font-family: 'Londrina Shadow', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+/* font-family: 'Passion One', cursive; */
+body{
+
+    display: grid;
+    grid-template-areas: "g_header g_header g_header g_header g_header"
+                            ". g_section g_section g_section ."
+                            "g_footer g_footer g_footer g_footer g_footer";
+    background :url(./images/ica10.jpg);
+    gap: 100px;
+    
+    
+}
+header{
+    grid-area: g_header;
+}
+
+h1{
+    text-align: center;
+    font-family: Passion One;
+    font-size: 40px;
+}
+section{
+    grid-area: g_section;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+
+
+
+}
+#brands{
+    grid-column: 1/2;
+    font-size: 30px;
+
+}
+#year{
+    grid-column: 2/3;
+    font-size: 30px;
+}
+#vehicles{
+    grid-column: 3/4;
+    font-size: 30px;
+
+}
+#result_btn{
+    grid-column: 2/4;
+
+    /* grid-row: 2/3; */
+
+}
+#textId{
+    grid-column: 1/6; 
+}
+
+#divInput{
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    background-color: pink;
+}
+#resultId{
+   text-align: center;
+}
+
+#Btn{
+    width: 100%;
+    font-size: 30px;
+}
+footer{
+    grid-area: g_footer;
+    text-align: center;
+}

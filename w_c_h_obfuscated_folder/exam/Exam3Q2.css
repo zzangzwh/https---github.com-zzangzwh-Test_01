@@ -1,0 +1,87 @@
+
+header,footer{
+    background-color:rgb(0, 255, 0);
+    margin:1%;
+    padding: 2%; 
+    color:#d128c9;
+    display: flex;
+    justify-items:center;
+    align-items:center;
+}
+
+header{
+    font-size: 2em;
+}
+
+footer{
+    font-size:1.5em;
+}
+button{
+    background-color:cyan;
+    font-size: 1.5em;
+    border-radius: 10px;
+  }
+
+   
+
+@media screen and (min-width: 800px){
+ body {
+        display:grid;
+        grid-template-columns: 1fr 4fr 1fr ;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size:1.5em;
+      }
+   #arraySize{
+       padding: 10%;
+   }   
+
+   .headerfooterclass {
+        grid-column:1/end;
+        justify-content:center;
+        text-align:center;
+        height: 60px;
+        }
+    
+
+    #innerPanel{
+        grid-column:2/3;
+        display:grid;
+        
+        grid-template-columns: 1fr 1fr;
+        background-color: hsl(298, 55%, 79%);
+        margin-top: 10px;
+    }    
+
+    .dispButton{
+        grid-column:1/span 2;
+        width:190%;
+        margin: 5%;
+        
+    }
+    #firstList,#secondList,
+    #resultLabel,
+    #random1Label{
+        grid-column:1/2;
+        display:flex;
+        justify-content:flex-end;
+    }
+
+    #maxValueDiv,#firstDisplay,
+    #secondDisplay,#operationDiv,#results{
+        grid-column:1/span 2;
+        margin: 2%;
+        display:flex;
+        justify-self:center;
+        font-weight: bold;         } 
+
+       select,option{
+            font-size:1em;
+        }
+
+          
+}
+        
+      
+    
+

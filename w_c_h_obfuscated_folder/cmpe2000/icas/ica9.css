@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+/* font-family: 'Londrina Shadow', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+/* font-family: 'Passion One', cursive; */
+body{
+    font-family: 'Passion One', cursive;
+    display: grid;
+    grid-row-gap: 5vh;
+    grid-template-areas:    "g_header"
+                            "g_hobbies"
+                            "g_tablemaker"
+                            "g_passingarrays"
+                            "g_Footer";
+}
+header{
+    margin-top: 5vh;
+    grid-area: 'g_header';
+    text-align: center;
+    font-family: 'Londrina Shadow', cursive;
+}
+#hobbies{
+    justify-self: center;
+    width: 80%;
+    padding: 5px;
+    box-shadow: 5px 5px 5px silver;
+    background-color: rgb(176, 194, 141);
+    grid-area: 'g_hobbies';
+    display: grid;
+    grid-template-areas: "g_Div_Name"
+                            "g_Div_Hobby"
+                            "g_Div_Range"
+                            "g_Div_Btn1"
+                            "g_Div_Empty1";
+}
+#Div_Name{
+    grid-area: 'g_Div_Name';
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#Div_Hobby{
+    grid-area: 'g_Div_Hobby';
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#Div_Range{
+    grid-area: 'g_Div_Range';
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#Div_Btn1{
+    grid-area: 'g_Div_Btn1';
+}
+#Btn_Call{
+    width: 100%;
+}
+#Div_Empty1{
+    grid-area: 'g_Div_Empty1';
+}
+/* ---------------------------------------------------------------  */
+#tablemaker{
+    justify-self: center;
+    width: 80%;
+    padding: 5px;
+    box-shadow: 5px 5px 5px silver;
+    background-color: rgb(176, 194, 141);
+    grid-area: 'g_tablemaker';
+    display: grid;
+}
+#Div_Row_Col{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#Btn_Post{
+    width: 100%;
+}
+/* ---------------------------------------------------------------  */
+#passingarrays{
+    justify-self: center;
+    width: 80%;
+    padding: 5px;
+    box-shadow: 5px 5px 5px silver;
+    background-color: rgb(176, 194, 141);
+    grid-area: 'g_passingarrays';
+    display: grid;
+}
+#Btn_GS{
+    width: 100%;
+}
+#Btn_PS{
+    width: 100%;
+}
+#Footer{
+    grid-area: 'g_Footer';
+  
+}
+#Div_Empty2{
+    display: grid;
+    justify-content: center;
+}
+
+#Div_Fail{
+    display: grid;
+    width: 80%;
+    justify-self: center;
+}
+footer{
+    text-align: center;
+}

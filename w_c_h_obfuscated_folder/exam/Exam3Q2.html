@@ -1,0 +1,68 @@
+<!Doctype HTML>
+<html>
+    <head>   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exam 3-Q2</title>
+        <link rel="stylesheet" href="Exam3Q2.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Exam3Q2.js"></script>
+    </head>
+    <body>
+                
+            <header class="headerfooterclass">
+                Exam 3- Winter 2021 Question 2
+            </header>
+            
+            <div id="innerPanel">
+                <div id="firstDisplay">
+                   <label id="random1Label">Generated Random value:</label>
+                   <div id="random1"></div>
+                </div>                
+                <div id="maxValueDiv">
+                   <label id="maxValue">Maximum Value:</label>
+                   <input type="radio" name="maxVal" value="8" checked> 8
+                   <input type="radio" name="maxVal" value="10"> 10
+                   <input type="radio" name="maxVal" value="12"> 12
+                 </div>
+               
+                             
+               <div>
+                <button id="showButton" class="dispButton" type="button">Generate Values</button>
+               </div>
+               <div id="firstDisplay">
+                   <label id="fistSetLabel">1st Data Set is:</label>
+                   <div id="initialSet1"></div>
+                </div>
+                <div id="secondDisplay">
+                    <label id="secondSetLabel">2nd Data Set is:</label>
+                    <div id="initialSet2"></div>
+                 </div>
+
+               <div id="operationDiv">
+                    <label id="opChoiceLabel">Choose Operation Level:</label>
+                    <select id="operationLevel">
+                        <option value="0">Simple</option>
+                        <option value="1">Intermediate</option>
+                        <option value="2">Advanced</option>
+                    </select>
+                </div>
+                 
+                 <div>
+                    <button id="fetchResButton"  class="dispButton" type="button">Show Result</button>
+                 
+                </div>
+                <div id="results"></div>
+                  <label id="resultLabel"> Results are:</label>
+                  <div id="obtainedValues"></div>
+                </div>
+                
+            </div>   
+                      
+            
+            <footer class="headerfooterclass">
+                &copy CNT- April 2021
+             </footer> 
+        
+    </body>
+    </html>

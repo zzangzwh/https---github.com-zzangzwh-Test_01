@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fraunces:wght@100&family=Indie+Flower&family=Marck+Script&family=Open+Sans:wght@300&family=Shadows+Into+Light&family=Space+Mono&family=Yellowtail&display=swap');
+/*  different category font //font-family: 'East Sea Dokdo', cursive; */
+
+body{
+    background-color: #bc8f8fa3;
+    font-family: 'Space Mono';
+}
+#btn1 {
+    background-image: url(./ica.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#btn1:hover {
+    box-shadow: 10px 10px 5px red;
+}
+#btn2 {
+    background-image: url(./lab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#btn2:hover{
+    box-shadow: 10px 10px 5px blue;
+}
+#btn3 {
+    background-image: url(./demos/images/demo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#btn3:hover{
+    box-shadow: 10px 10px 5px yellow;
+}
+.Centered{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 320px;
+    height: 200px;
+    margin: 60px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    background-image: cover;
+}
+#WH_Lab p{
+    text-align: center;
+    font-size: large;
+    letter-spacing: 2px;
+    color : gray;
+}
+#WH_Lab{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 300px;
+    width: 620px;
+    background-image: url(./labs/images/lab.jpg);
+  background-size: contain;
+}
+#WHICA01_Header_P{
+    text-align: center;
+    font-size: large;
+    letter-spacing: 2px;
+    color : white;
+    font-family: 'Space Mono', monospace;
+}
+
+#ALast {
+    letter-spacing: 10px;
+}
+li :link {
+    color: green;
+}
+li :visited {
+    color: green;
+}
+li :hover{
+    color: yellow;
+}
+li :active{
+    color: red;
+}
+nav a{ 
+   
+    display: block;   
+    
+}
+
+h1 {
+    text-align: center;
+    background-color:  red;
+}
+h5{
+    background-color: red;
+     text-align: center; 
+}
+/* #WH_MENU {
+    list-style:  none;
+    background-color: yellow;
+    position: relative;
+    display: inline-flex;
+    padding: 40px;
+    box-sizing: border-box;
+    
+    
+}
+#WH_MENU :hover{
+    background-color: gray;
+    font-size: 100px;
+    
+    
+} */
+.list_styling{
+    margin-left: 40px;
+  
+    /* padding:  40px; */
+}
+nav > a{
+    color: blue;
+    font-size: 20px;
+}
+
+
+

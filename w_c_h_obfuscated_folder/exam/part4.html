@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ /* body{
+     display grid
+ } */
+ form{
+     border: 2px solid black;
+ }
+ body{
+     display: grid;
+     grid-template-columns: 33vw 33vw;
+         grid-template-rows: 25vh 25vh 25vh 25vh; 
+   
+ }
+ .select{
+     grid-row: 1/4;
+     grid-column: 1/2;
+     border: 2px solid black;
+ }
+ .size{
+    grid-row: 3/4;
+     grid-column: 1/4;
+     border: 2px solid black;
+ }
+ .name{
+    grid-row: 2/4;
+     grid-column: 1/4;
+     border: 2px solid black;
+ }
+ .reset_btn{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    
+  
+
+ }
+ 
+  .submit_btn{
+    grid-row: 6/7;
+    grid-column: 3/4;
+
+ } 
+ 
+
+ #btn1,#btn2{
+    border: 1px solid black;
+ }
+
+ 
+
+</style>
+<body>
+    <form action="https://thor.net.nait.ca/~monsterj/2020fall/le1starter.html" method="POST">
+
+        <section class="select">
+            <label id="choice"> Type: </label>            
+                  <select name="drink" >
+                    <option value="coffee" >  coffee   </option>
+                            <option value="chai">chai tea</option>
+                            <option value="london" selected>london fog</option>
+                                </select>
+            </section>
+
+
+
+        <section class="size">
+                <legend> <label for="rr"> Size?</label></legend>
+                    <input type="radio" name="Fanboy" value="chepepst" required id="rr"><label> Tall</label> <br>
+                    <input type="radio" name="Fanboy" value="large" required checked> <label> Grande</label> <br>
+                    <input type="radio" name="Fanboy" value="thirsty" required> <label> VEnti</label>                
+            
+                </section>
+
+         <section class="name">            
+        <label for="XYZ" class="firstName">NickName: 
+                <input id="XYZ" class="result" type="Text" name="UserName"  placeholder="guest" required >
+                            </label> 
+                            <input type="hidden" name="Invisible" value="guest">   
+
+        </section>
+         
+          <section class="reset_btn">
+              <input type="reset" value="Reset" class="result" id=btn1>
+            </section>
+            <section class="submit_btn">
+
+                <input type="submit" value="submit" class="result" id="btn2">
+            </section>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+html{
+    font-family: sans-serif;
+}
+.field label{
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 5rem;
+    
+}
+.field input{
+    border: 1px solid #333;
+    padding: 0.25rem;
+    color: red;
+    
+}
+.error{
+    color: red;
+}

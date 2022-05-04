@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonhyuk</title>
+</head>
+
+<style>
+ *{
+    margin :0;
+    padding : 0;
+
+} 
+
+
+.container{
+    background: url(./img/wh.jpeg);
+    width: 100%;
+    height : 100vh;
+    /* background: linear-gradient(rgba(0,0,0,.4)) */
+    background-position: center;
+    background-size:cover;
+
+}
+.hamburger{
+    width: 45px;
+    height: 35px;
+    /* background-color: red; */
+    position: fixed;
+    top: 50px;
+    right: 80px;
+    cursor: pointer ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line{
+   width: 100%;
+   height: 3px;
+   background-color: white;
+   transition: all 0.7s;
+}
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-6px,6px);
+    background-color: red;
+}
+.change .line-2{
+transform: rotateZ(180deg);
+background-color: purple;
+}
+
+
+.change .line-3{
+    transform: rotateZ(405deg) translate(-6px,-6px);
+    background-color: yellow;
+}
+.change .line-4{
+    transform: rotateZ(450deg)  translate(-16px,0px);
+}
+.nav{
+    width:200px;
+    height:100%;
+    background-color: transparent;
+    position: fixed;
+    top :-65px;
+    right:-200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80% 0 0 80%;
+    transition: right 1s;
+}
+.change{
+    right :0;
+}
+.nav-list{
+    text-align: right;
+
+}
+.nav-item{
+    list-style: none;
+    margin: 30px;
+    font-size: 30px;
+   
+  
+}
+ .nav-link{
+    text-decoration: none;
+    font-weight: 200;  
+    font-size :25px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 0;
+
+} 
+
+.nav-link::before,
+.nav-link::after{
+    content :""; 
+    width: 100%;
+    height : 1px;
+    background-color: red;
+    position: absolute;
+    left: 0;    
+    transform: scaleX(0); 
+    transition: transform 0.7s;
+    
+}
+
+.nav-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+.nav-link::before{
+    top: 0;
+    transform-origin: left;
+}
+.nav-link:hover::before,
+.nav-link:hover::after{
+    transform: scaleX(1);
+   
+}
+#wh_H{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position:absolute;
+    top: 80px;
+    left:200px;
+    color: transparent;
+   
+    -webkit-text-stroke: 1px white;
+}
+#wh_H:hover{
+    color: white;
+    text-shadow: 1px 1px 5px yellow;
+    cursor:pointer;
+    box-shadow: 0 2px red;
+
+}
+.wh2_P{
+    position: absolute;
+    top:180px;
+    left: 70px;
+    font-size: 30px;
+    color:black;
+}
+.wh3_P{
+    position: absolute;
+    top:220px;
+    left: 70px;
+    font-size: 30px;
+    color: black;
+}
+.wh4_P{
+    position: absolute;
+    top:260px;
+    left:70px;
+    font-size: 30px;
+    color: black;
+}
+.wh5_P{
+    position: absolute;
+    top:300px;
+    left:70px;
+    font-size: 30px;
+    color: black;
+}
+#wh_ul{
+    list-style: none;
+  
+    position: absolute;
+ 
+  
+    top :380px;
+    left: 400px;
+    display : inline-flex;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    
+    
+}
+#wh_ul #wh_li {
+    margin: 20px;
+    
+
+}
+
+
+</style>
+<body>
+    
+    <section class="container">
+        <div>
+            <h1 id="wh_H">About Wonhyuk</h1>
+            <p class="wh2_P" >Nationality: Born In Korea and Raised in Canada </p>
+            <p class="wh3_P" >Experience : Java,Html,Css,JavaScript,JDBC,Database,JQuery,C,C# </p>          
+            <p class="wh4_P" >Phone      : 780 200 3879 </p>
+            <p class="wh5_P" >Email      : zzangzwh@hotmail.com / zzangzwh1@gmail.com </p>
+            <ul id="wh_ul">
+                <li id="wh_li"> <a href="https://www.facebook.com/mike.cho.526" style="color:  white;">facebook</a></li>
+                <li id="wh_li"><a href="https://www.instagram.com/wonhyuk_cho" style="color: white;">Instagram</a> </li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <div class="hamburger">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item" onclick="window.location.href='./index.html';"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./wh.html" class="nav-link"> Wonhyuk</a> </li>
+                <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Hobby</a></li>
+                
+            </ul>            
+            
+        </nav>
+    </section>
+
+</body>
+    <script>
+        const menu = document.querySelector('.hamburger');
+        const navBar = document.querySelector('nav');
+        menu.addEventListener('click',() =>{
+            navBar.classList.toggle('change');
+        }); 
+
+    </script>
+</html>

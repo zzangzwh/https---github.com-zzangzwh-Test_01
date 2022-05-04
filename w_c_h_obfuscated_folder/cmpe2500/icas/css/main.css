@@ -1,0 +1,32 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #666666;
+
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header{
+    padding: 2rem;
+    background-color: #dddddd;
+}
+section{
+    margin-bottom: 1rem;
+    background-color: #e8e3f0;
+}
+.cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+

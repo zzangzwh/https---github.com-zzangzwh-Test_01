@@ -1,0 +1,23 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+   
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+}
+header{
+    background-color: blue;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.cols{
+    background-color: turquoise;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 1rem;
+}
+

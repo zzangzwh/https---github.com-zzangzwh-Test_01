@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+/* font-family: 'RocknRoll One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+/* font-family: 'Londrina Shadow', cursive; */
+body{
+    display: grid;
+    grid-template-areas: "g_header"
+                            "g_form"
+                            "g_footer";
+    background-color: silver;  
+    
+    row-gap: 1vh;
+}
+header{
+    grid-area: g_header;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    font-family: 'Londrina Shadow', cursive;
+}
+form{
+    font-family: 'RocknRoll One', sans-serif;
+    grid-area: g_form;
+    color: white;
+    background-color: rgb(59, 59, 117);
+    display: grid;
+    grid-template-areas: "g_lb_brandselector"
+                            "g_input_brand"
+                            "g_lb_model"
+                            "g_input_model"
+                            "g_lb_options"
+                            "g_input_options"
+                            "g_lb_prepayment"
+                            "g_input_prepament"
+                            "g_status"
+                            "g_btn_submit";
+}
+#lb_brandselector{
+    grid-area: g_lb_brandselector;
+    display: grid;
+    justify-content: left;
+}
+#input_brand{
+    grid-area: g_input_brand;
+    display: grid;
+    justify-content: left;
+}
+#brand_list{
+    background-color: yellow;
+    font-family: 'RocknRoll One', sans-serif;
+    font: 1em;
+}
+#lb_model{
+    grid-area: g_lb_model;
+    display: grid;
+    justify-content: left;
+}
+#input_model{
+    grid-area: g_input_model;
+    display: grid;
+    justify-content: left;
+}
+#lb_options{
+    grid-area: g_lb_options;
+    display: grid;
+    justify-content: left;
+}
+#input_options{
+    grid-area: g_input_options;
+    display: grid;
+    justify-content: left;
+}
+#lb_prepayment{
+    grid-area: g_lb_prepayment;
+    display: grid;
+    justify-content: left;
+}
+#input_prepament{
+    grid-area: g_input_prepament;
+    display: grid;
+    justify-content: left;
+    font-family: 'Roboto Mono', monospace;
+}
+#status{
+    grid-area: g_status;
+    white-space: pre-line;
+}
+#btn_submit{
+    grid-area: g_btn_submit;
+    font-family: 'RocknRoll One', sans-serif;
+}
+footer{
+    grid-area: g_footer;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+@media screen and (min-width: 800px){
+    body{
+        display: grid;
+        grid-template-areas: "g_header g_header g_header"
+                                ". g_form ."
+                                "g_footer g_footer g_footer";
+    }
+    header{
+        grid-area: g_header;
+        font-size: 1.5em;
+    }
+    form{
+        font-size: 1.3em;
+        grid-area: g_form;
+        display: grid;
+        row-gap: 5vh;
+        grid-template-areas: "g_lb_brandselector g_input_brand"
+                                "g_lb_model g_input_model"
+                                "g_lb_options g_input_options"
+                                "g_lb_prepayment g_input_prepament"
+                                "g_status g_status"
+                                "g_btn_submit g_btn_submit";
+                                background-color: rgb(97, 133, 233);
+    }
+    #lb_brandselector{
+        grid-area: g_lb_brandselector;
+        display: grid;
+        justify-content: right;
+        align-content: center;
+        padding-right: 2vw;
+    }
+    #input_brand{
+        grid-area: g_input_brand;
+        display: grid;
+        grid-template-areas: "g_brand_list g_brand_img";
+        justify-content: left;
+        padding-right: 20vw;
+    }
+    #brand_list{
+        grid-area: g_brand_list;
+        font-size: 1em; 
+    }
+    #brand_img{
+        grid-area: g_brand_img;
+    }
+    #lb_model{
+        grid-area: g_lb_model;
+        display: grid;
+        justify-content: right;
+        align-content: center;
+        padding-right: 2vw;
+    }
+    #input_model{
+        grid-area: g_input_model;
+        display: grid;
+        justify-content: left;
+        padding-right: 20vw;
+    }
+    #lb_options{
+        grid-area: g_lb_options;
+        display: grid;
+        justify-content: right;
+        align-content: center;
+        padding-right: 2vw;
+    }
+    #input_options{
+        grid-area: g_input_options;
+        display: grid;
+        justify-content: left;
+        padding-right: 20vw;
+    }
+    #lb_prepayment{
+        grid-area: g_lb_prepayment;
+        display: grid;
+        justify-content: right;
+        align-content: center;
+        padding-right: 2vw;
+    }
+    #input_prepament{
+        grid-area: g_input_prepament;
+        display: grid;
+        margin: 0%;
+        justify-content: left;
+        padding-right: 20vw;
+        font-size: 1em; 
+    }
+    #status{
+        grid-area: g_status;
+        display: grid;
+        align-content: center;
+        white-space: pre-line;
+    }
+    #btn_submit{
+        grid-area: g_btn_submit;
+        font-size: 1.3em;
+    }
+    footer{
+        grid-area: g_footer;
+    }
+}
